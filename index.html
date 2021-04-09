@@ -1,18 +1,135 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-
-  <title>HELLO WORLD</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-
+    <meta charset="utf-8">
+    <title>Socks Plus Sandals // A Website For Cool Dads</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/beer-mug.ico">
+    <link rel="stylesheet" href="src/assets/css/normalize.css">
+    <link rel="stylesheet" href="src/assets/css/style.css">
 </head>
 
 <body>
-  <script src="js/scripts.js"></script>
+    <header>
+        <img class="logo" src="images/socks-dads-main.png" alt="Socks Plus Sandels // A Place For Cool Dads" />
+        <h1>SOCKS PLUS SANDALS</h1>
+        <h2>(a website for cool dads)</h2>
+
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#jokes">DAD JOKES</a></li>
+                <li><a href="#memes">DAD MEMES</a></li>
+            </ul>
+            <ul class="main-nav">
+                <li><a href="#contact">TOUCH BASE</a></li>
+                <li><a href="#about">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h3>"Hero Dad Image"</h3>
+        <section class="row5 column">
+            <div class="dadphoto">
+            </div>
+        </section>
+
+        <h3>"Dad Jokes Generator"</h3>
+        <section class="row column">
+            <img class="badge1" src="images/wreath-jokes-fade.png" alt="laurel wreath award graphic for cool dad jokes">
+            <div class="container">
+                <div id="jokes" class="joke">
+                    <p></p>
+                </div>
+                <button class="btn-submit">Dad Joke Button</button>
+            </div>
+        </section>
+
+        <h3>Dad Memes Slideshow</h3>
+        <section class="row2 column">
+            <span id="memes"></span>
+            <div id="slideshow">
+                <div class="arrow"><img id="left" src="/images/left-arrow.png" alt="left slideshow arrow" class="arrow-image"></div>
+                <div class="arrow"><img id="right" src="/images/right-arrow.png" alt="right slideshow arrow" class="arrow-image"></div>
+            </div>
+            <img class="badge2 " src="images/wreath-memes-fade.png" alt="laurel wreath award graphic for cool dad memes">
+        </section>
+
+        <h3>"Second Hero Dad Image With Quote"</h3>
+        <section class="row5 column">
+            <div class="dadphoto2">
+                <h4 class="hero-text">"I 'm Cool Dad, that's my thang.<br /> I'm hip, I surf the web, I text."<br /> - Phil Dunphy
+                </h4>
+            </div>
+        </section>
+
+        <h3>Dad Tip Calculator</h3>
+        <section class="row3 column">
+            <img class="badge2" src="images/wreath-tip-fade.png" alt="laurel wreath award graphic for cool dad tip calculator">
+            <div class="container3">
+                <div class="output">
+                    <p>Cool Dads ask, "What's the damage?" $$$:</p>
+                    <input id="tipinput" type="number" value="100">
+                    <div>
+                        <button id="tipbutton" class="btn-submit">What is the tip?</button>
+                    </div>
+                    <p id="tipoutput"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="row6 column">
+            <h3>About this Cool Dad</h3>
+            <div class="container5">
+                <img id="about" class="mydads" src="images/Jesse_Daniels_Headshot.jpg" alt="Cool Dad Jesse Daniels only has one outdated headshot">
+                <p>My name is Jesse Daniels. I am studying computer programming with Code Louisville. This is my Cool Dad website. I wear crocs with my socks and have an old truck that only starts occasionally. I am definitely a cool dad. Please read about
+                    the cool dads who raised me!</p>
+            </div>
+            <div class="container5">
+                <img class="mydads" src="images/jerry-daniels-1984.jpg" alt="cool dad Jerry Daniels in black and white 35mm photo">
+                <p>This is my cool dad, Jerry. He spent his youth in an orphanage, came up in dive bars, and came out on top. He has been in rock bands and drove fast cars. He has a lion pinky ring and a direct line to the big guy upstairs. He is definitly
+                    a cool dad.</p>
+            </div>
+            <div class="container5">
+                <img class="mydads" src="images/gene-bradley-motorcycle.JPG" alt="cool dad Gene Bradley rides a motorcycle in vintage photo">
+                <p>This is my other cool dad, Gene. He drove fast motorcycles and faster boats. He knows a thing or two about small engines, airplanes, and nursing. Loves Sinatra and Motown, has a few Tommy Bahama shirts and is definitely a cool dad.</p>
+            </div>
+            <div class="container5">
+                <img class="mydads" src="images/homer-simpson.jpg" alt="image of cartoon cool dad Homer Simpson">
+                <p>This is Homer Simpson. One of everyones favorite cool dads. What the other cool dads didn't teach me, I filled in with Homer's knowledge. Just because he doesn't understand doesn't mean he can't care. Homer is definitely a cool dad.</p>
+            </div>
+
+        </section>
+
+        <section class="row4 column">
+            <h3>Contact Form</h3>
+            <form class="container4" name="contactForm" action="" method="post" id="contact">
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname " id="fname" placeholder="First name here">
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname " id="lname" placeholder="Last name here">
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="email@website.com here">
+                <label for="validate">What is 3 + 1?:</label>
+                <input type="text" placeholder="Add it up here" name="validate" id="validate">
+                <label for="msg">Message:</label>
+                <textarea id="msg" placeholder="Shoot dad a cool note" rows="5"></textarea>
+                <div>
+                    <button class="btn-submit">Submit</button>
+                </div>
+            </form>
+            <img class="badge3" src="images/wreath-contact-fade.png" alt="laurel wreath award graphic for cool dad contact form">
+        </section>
+
+    </main>
+
+    <footer>
+        <img src="images/beer-cheers.png" alt="beer glasses having a cheers">
+        <p>&copy;2021 Socks Plus Sandles // a place for cool dads</p>
+        <img src="images/beer-cheers.png" alt="beer glasses having a cheers">
+    </footer>
+    <script src="main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,11 @@
+{
+  "name": "codelou-javascript-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for CodeLouisville Javascript Track",
+  "main": "dist/main.js",
+  "author": "Michael Wrock",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/Daeluse/codelou-javascript-boilerplate.git"
+  }
+}

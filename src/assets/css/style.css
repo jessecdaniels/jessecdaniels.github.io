@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Montserrat";
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+h1 {
+    font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+h3 {
+    display: none;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 4em;
+    left: 1000px;
+    color: rgb(0, 0, 0);
+    margin: 8px 50px 8px 8px;
+    text-shadow: white 1px 0px 2px;
+}
+
+.logo {
+    width: 200px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+    font-size: 20px;
+    background-color: white;
+    /* This allowed jump links to not get hidden behind header
+unfortunately Safari does not support this so it only works in Chrome
+
+/* #jokes,
+#slideshow,
+#about
+{
+  scroll-margin-top: 400px;
+} 
+*/
+    /* So this was the way I got jump links to not be hidden behind sticky with
+more browser support
+*/
+}
+
+#about,
+#jokes {
+    padding-top: 400px;
+    margin-top: -400px;
+}
+
+#memes {
+    padding-top: 350px;
+    margin-top: -350px;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 5px;
+    left: 25%;
+    width: 50%;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
+    margin: 30px;
+    padding: 5px;
+    margin-left: auto;
+    display: inline-block;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+/* Container for flexboxes */
+
+.row {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    min-height: 500px;
+    display: flex;
+    border-color: tomato;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    margin-right: 50px;
+    background-color: rgb(243, 248, 255);
+    box-shadow: 5px 5px rgb(0, 229, 255);
+}
+
+.row2 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    background: transparent;
+    background-color: rgb(243, 248, 255);
+    box-shadow: 5px 5px rgb(0, 229, 255);
+}
+
+.row3 {
+    padding: 50px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    margin-right: 50px;
+    background-color: rgb(243, 248, 255);
+    box-shadow: 5px 5px rgb(0, 229, 255);
+}
+
+.row4 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    background: transparent;
+    background-color: rgb(243, 248, 255);
+    box-shadow: 5px 5px rgb(0, 229, 255);
+}
+
+.row5 {
+    display: flex;
+}
+
+.row6 {
+    padding: 50px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 50px;
+}
+
+
+/* The hero image */
+
+.dadphoto {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2020%2F03%2F31%2FDadGroup.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.dadphoto2 {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F38%2F2020%2F05%2F28%2Fillustration-of-dad-holding-child-9b3ce99a.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* Create equal columns that sits next to each other */
+
+.column {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin: 40px 40px 40px 60px;
+    max-width: 500px;
+    min-height: 500px;
+    color: rgb(55, 55, 55);
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: tomato;
+    padding: 50px;
+    box-shadow: 5px 5px rgb(0, 229, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.container p {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-right: 40px;
+    line-height: 3rem;
+    text-align: left;
+}
+
+.container3 {
+    margin: 40px 40px 40px 40px;
+    min-width: 450px;
+    min-height: 400px;
+    color: rgb(55, 55, 55);
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: tomato;
+    padding: 70px;
+    box-shadow: 5px 5px rgb(0, 229, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.container4 {
+    margin: 40px 40px 40px 40px;
+    min-width: 400px;
+    max-width: 90%;
+    color: rgb(55, 55, 55);
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: tomato;
+    padding: 50px;
+    box-shadow: 5px 5px rgb(0, 229, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.container5 {
+    margin: 20px 0px 20px 40px;
+    max-width: 500px;
+    min-height: 500px;
+    color: rgb(55, 55, 55);
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: tomato;
+    padding: 50px;
+    box-shadow: 5px 5px rgb(0, 229, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container5 p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 3rem;
+    text-align: left;
+}
+
+.mydads {
+    width: 350px;
+    height: auto;
+}
+
+button {
+    margin-top: 20px;
+    width: fit-content;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: rgb(117, 170, 220);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 6px #999;
+    text-transform: uppercase;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.container3 p {
+    font-size: 1.5em;
+}
+
+button:hover {
+    background-color: rgb(117, 170, 220)
+}
+
+button:active {
+    background-color: rgb(54, 99, 142);
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+#slideshow {
+    height: 400px;
+    width: 600px;
+    margin-top: 50px;
+    border: 2px solid tomato;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 5px 5px rgb(0, 229, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+textarea {
+    resize: none;
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.arrow-image {
+    width: 35px;
+    height: 35px;
+}
+
+.arrow-image:hover {
+    background-color: rgb(0, 229, 255);
+}
+
+.badge1 {
+    margin: 40px 40px 40px 40px;
+    height: 300px;
+    width: 300px;
+    align-self: center;
+}
+
+.badge2 {
+    margin: 40px 40px 40px 40px;
+    height: 300px;
+    width: 300px;
+    align-self: center;
+}
+
+.badge3 {
+    margin: 40px 40px 40px 40px;
+    height: 300px;
+    width: 300px;
+    align-self: center;
+}
+
+
+/* Contact Form -------------------- */
+
+form {
+    align-self: center;
+    justify-self: center;
+}
+
+input,
+textarea {
+    font-size: 18px;
+    font-weight: 300;
+    width: 100%;
+    border: solid 1px;
+    height: auto;
+    padding: 15px;
+    margin-bottom: 1.2em;
+    background-color: #f5f5f5;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.btn-submit,
+.btn-reset {
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: 10px;
+    width: fit-content;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: rgb(54, 99, 142);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 6px #999;
+    text-transform: uppercase;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+#tipoutput {
+    font-weight: 300;
+    margin-top: 45px;
+    margin-bottom: -60px;
+}
+
+
+/* Style the footer */
+
+footer {
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(21, 61, 104);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 50x;
+    height: 50px;
+}
+
+footer p {
+    margin: 0 20px;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .row,
+    .row3,
+    .row5,
+    .row6 {
+        flex-direction: column;
+    }
+    .row2,
+    .row4 {
+        flex-direction: column-reverse;
+    }
+    .row,
+    .row2,
+    .row3,
+    .row4 {
+        border-radius: 0px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .row6 {
+        align-items: center;
+        align-self: center;
+    }
+    #slideshow {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .container,
+    .container3,
+    .joke {
+        width: 80%;
+        margin-right: 10%;
+    }
+    li {
+        display: block;
+    }
+    .logo {
+        width: 28%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 1500px) {
+    nav {
+        width: 100%;
+        left: 0;
+    }
+    .row6 {
+        align-items: center;
+        align-self: center;
+    }
+}
+
+@media (max-width: 1800px) {
+    .row6 {
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+    }
+}
