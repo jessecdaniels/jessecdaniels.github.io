@@ -468,7 +468,7 @@ footer p {
 
 /* Media Queries */
 @media screen and (max-width: 767px) {
-    .nav{
+    .nav {
             width: 60%;
             left: 0;
     }
