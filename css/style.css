@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap");
+
+$outline: 2px;
+
+body {
+  margin: 0;
+  font-family: 'Assistant', sans-serif;
+  text-align: center;
+}
+header {
+  background-color: rgb(254, 224, 230);
+  padding: 5px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+main {
+  margin: 0 auto;
+  max-width: 800px;
+}
+figure {
+  display: flex;
+}
+figure img {
+  width: 400px;
+  display: block;
+  margin-right: 15px;
+}
+figcaption {
+  text-align: left;
+}
+.headshot {
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+h1 {
+  font-family: 'CoreCircus', sans-serif;
+  text-transform: uppercase;
+	text-decoration: none;
+	color: rgb(76, 0, 255);
+	text-shadow: 2px 2px #ffffff;
+	}
