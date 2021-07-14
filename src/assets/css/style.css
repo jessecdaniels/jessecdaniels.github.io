@@ -192,7 +192,7 @@ nav a {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: local;
 }
 
 .dadphoto2 {
@@ -472,9 +472,6 @@ footer p {
             width: 60%;
             left: 0px;
     }
-    .logo {
-        width: 20%;
-        max-width: 150px;
     
 }
 @media (max-width: 1200px) {
